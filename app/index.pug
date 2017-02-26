@@ -1,0 +1,50 @@
+doctype html
+html
+  head(lang='en')
+    title freeCodeCamp pomodoro challenge
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel="apple-touch-icon" href="./../img/apple-touch-icon.png")
+    link(rel="shortcut icon" href="./../img/favicon.ico")
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css', type='text/css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Ubuntu')
+    link(rel='stylesheet', href='./css/app.css', type='text/css')
+
+
+  body
+    div.content
+      fieldset#choose-player
+        input(type="radio", id="player", name="player-selection", value="o")
+        label(for="playerO") player O
+        input(type="radio", id="player", name="player-selection", value="x")
+        label(for="playerX") player X
+
+
+      div.header
+        h1 tictactoe
+
+      div.column#app
+
+        section
+          div.box#11
+          div.box#12
+          div.box#13
+
+        section
+          div.box#21
+          div.box#22
+          div.box#23
+
+        section
+          div.box#31
+          div.box#32
+          div.box#33
+
+
+      div.footer
+        i.fa.fa-copyright(aria-hidden="true")
+          span.ubuntu 2017 by Rudolf Vogel - An der Fleschermühle 14 - 87509 Immenstadt - rugead@gmail.com
+
+  script(type="text/javascript", src="js/dist/bundle.js")

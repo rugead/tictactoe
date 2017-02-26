@@ -1,0 +1,96 @@
+body {
+  background: white;
+  font-family: ubuntu;
+  color: royalblue;
+}
+
+section {
+  display: flex;
+
+}
+
+.content {
+	display: flex;
+  flex-direction: column;;
+  margin: 2vh 2vw 0 2vw;
+  flex-wrap: wrap;
+  justify-content: space-between;;
+  align-content: center;
+}
+
+.header, h1 {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.column {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 40px;
+	display: flex;
+  flex: 1 0 auto;
+	flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.footer .ubuntu {
+  font-family: ubuntu;
+  font-size: 0.75em;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.box {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  border: 1px solid;
+  border-color: darkred;
+  width: 150px;
+  height: 150px;
+  flex: 1 30%;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+}
+
+/* Tabletts */
+@media only screen and (min-width: 760px) {
+	/*.content { max-width: 760px }*/
+  .content {
+  	width: 80vw;
+  	margin: 2vh 10vw 0 10vw;
+  }
+
+}
+
+/* Mittlere Monitore */
+@media only screen and (min-width: 980px) {
+	/*.content { max-width: 980px }*/
+  .content {
+  	width: 60vw;
+  	margin: 2vh 20vw 0 20vw;
+  }
+
+}
+
+/* Große Monitore */
+@media only screen and (min-width: 1280px) {
+  .content {
+  	width: 40vw;
+  	margin: 2vh 30vw 0 30vw;
+  }
+
+}
